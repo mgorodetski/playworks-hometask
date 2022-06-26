@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <table class="field disabled" id="field">
+        <tbody>
+            <tr class="row">
+                <td class="cell">X</td>
+                <td class="cell">0</td>
+                <td class="cell">X</td>
+            </tr>
+            <tr class="row">
+                <td class="cell">0</td>
+                <td class="cell">0</td>
+                <td class="cell">X</td>
+            </tr>
+            <tr class="row">
+                <td class="cell">X</td>
+                <td class="cell">X</td>
+                <td class="cell">0</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="modal-wrapper" id="choice-modal">
+        <p class="modal-text" id="modal-text">Wanna play?</p>
+        <div class="buttons-container">
+            <button class="button button-refuse" id="modal-refuse" value="no">
+                No
+            </button>
+            <button class="button button-agree active" id="modal-agree" value="yes">
+                Yes
+            </button>
+        </div>
+    </div>
+    <div class="ad hidden" id="ad">
+        <div class="ad-content">
+            <video id="video-element">
+                <source src="https://storage.googleapis.com/interactive-media-ads/media/android.mp4">
+                <source src="https://storage.googleapis.com/interactive-media-ads/media/android.webm">
+            </video>
+            <div class="ad-container" id="ad-container"></div>
+        </div>
+    </div>
+    <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
